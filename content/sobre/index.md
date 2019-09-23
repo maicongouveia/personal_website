@@ -21,8 +21,6 @@ Desenvolvi e prestei manutenção em diversas aplicações, entrei na empresa co
 #### Tecnologias
  - PHP (Laravel Framework)
  - Javascript (Node.js, Express Framework, Loopback Framework)
- - AWS
- - Azure 
  - HTML 
  - CSS
 
@@ -50,8 +48,7 @@ necessidades do cliente e propor novas soluções para melhorar seus negócios
 
 ##### Tecnologias
 - PHP
-- Javascript 
-- AWS 
+- Javascript
 - HTML 
 - CSS
 
