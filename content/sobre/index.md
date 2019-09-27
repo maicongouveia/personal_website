@@ -9,9 +9,6 @@ Trabalhando como engenheiro de software, atuei no time de integração da empres
  - Python (Django Framework)
  - Kotlin (Micronaut Framework)
  - Apache Camel
- - Apache Kafka
- - Jenkins
- - Circli CI
  - Docker
 
 ## <a href='https://madeinweb.com.br' target='_blank'>MadeinWeb</a> (Março/2018 - Março/2019)
@@ -21,8 +18,6 @@ Desenvolvi e prestei manutenção em diversas aplicações, entrei na empresa co
 #### Tecnologias
  - PHP (Laravel Framework)
  - Javascript (Node.js, Express Framework, Loopback Framework)
- - AWS
- - Azure 
  - HTML 
  - CSS
 
@@ -50,8 +45,7 @@ necessidades do cliente e propor novas soluções para melhorar seus negócios
 
 ##### Tecnologias
 - PHP
-- Javascript 
-- AWS 
+- Javascript
 - HTML 
 - CSS
 
