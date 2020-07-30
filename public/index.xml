@@ -2,13 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maicon Gouveia</title>
-    <link>http://www.maicongouveia.com/</link>
+    <link>https://www.maicongouveia.com/</link>
     <description>Recent content on Maicon Gouveia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
+    <lastBuildDate>Sat, 15 Jun 2019 23:29:35 -0300</lastBuildDate>
     
-	<atom:link href="http://www.maicongouveia.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.maicongouveia.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Recomece, quantas vezes forem necessárias</title>
+      <link>https://www.maicongouveia.com/posts/recomece-quantas-vezes-forem-necessarias/</link>
+      <pubDate>Sat, 15 Jun 2019 23:29:35 -0300</pubDate>
+      
+      <guid>https://www.maicongouveia.com/posts/recomece-quantas-vezes-forem-necessarias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.maicongouveia.com/sobre/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.maicongouveia.com/sobre/</guid>
+      <description>Experiência Profissionais Loggi (Março/2019 - Atualmente) Trabalhando como engenheiro de software, atuei no time de integração da empresa, responsavel por integrar o nosso sistema com os dos clientes da empresa. Por ser uma empresa grande precisavamos dar suporte as falhas que ocorriam de integração e tambem buscando sempre desenvolver novos sistemas para facilitar esse processo.
+Tecnologias  Python (Django Framework) Kotlin (Micronaut Framework) Apache Camel Docker  MadeinWeb (Março/2018 - Março/2019) Desenvolvi e prestei manutenção em diversas aplicações, entrei na empresa como Backend PHP, porem, com a demanda alta, participei de diversos projetos.</description>
+    </item>
     
   </channel>
 </rss>
