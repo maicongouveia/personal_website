@@ -1,0 +1,4 @@
+baseURL = "http://maicongouveia.com.br"
+languageCode = "pt-br"
+title = "Maicon Gouveia"
+theme = "dimension"
