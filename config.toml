@@ -1,4 +1,4 @@
-baseURL = "http://maicongouveia.com.br"
+baseURL = "https://maicongouveia.com.br"
 languageCode = "pt-br"
 title = "Maicon Gouveia"
 theme = "dimension"
