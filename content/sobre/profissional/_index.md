@@ -59,7 +59,7 @@ sem a necessidade de atendimento.
 ### Freelancer 
 #### (Fevereiro/2017 - Março/2018)
 ***
-Desenvolvi disversos projetos para empresas de pequeno porte e sistemas para
+Desenvolvi diversos projetos para empresas de pequeno porte e sistemas para
 escolas. Lidando diversas vezes com clientes e sempre procurando atendender as
 necessidades do cliente e propor novas soluções para melhorar seus negócios
 
