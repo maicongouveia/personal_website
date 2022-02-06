@@ -10,7 +10,7 @@ title: Formação
 ***
 #### TCC - WatchMyCar
 ***
-Sistema de monitorimento veicular.Saiba mais no site.
+Sistema de monitoramento veicular.
 https://www.watchmycar.com.br
 
 #### Características
@@ -26,5 +26,5 @@ https://www.watchmycar.com.br
 ***
 #### 11 Março 2016
 #### Exame - Arena Tech
-**[Matéria](https://exame.abril.com.br/videos/arena-tech/alarme-inteligente-manda-foto-de-ladrao-de-carro-para-app/?fbclid=IwAR3aDgbBMIHrlQigOl7KMjlws9gCyg6-9NmdWwSBFrKuRCifIhU4nr_DUnA)**
+**[Matéria](https://exame.com/videos/arena-tech/alarme-inteligente-manda-foto-de-ladrao-de-carro-para-app/)**
 ***
