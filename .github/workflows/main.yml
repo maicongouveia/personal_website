@@ -15,4 +15,4 @@ jobs:
         username: github@maicongouveia.com.br
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: "./public/"
-        server-dir: "."
+        server-dir: "./"
