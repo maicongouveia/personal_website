@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://maicongouveia.com.br/blog/</loc>
-  </url><url>
     <loc>https://maicongouveia.com.br/sobre/profissional/</loc>
   </url><url>
     <loc>https://maicongouveia.com.br/categories/</loc>
@@ -14,16 +12,8 @@
   </url><url>
     <loc>https://maicongouveia.com.br/</loc>
   </url><url>
-    <loc>https://maicongouveia.com.br/blog/desenvolvimento/nenhum/</loc>
-  </url><url>
-    <loc>https://maicongouveia.com.br/blog/vida/nenhum/</loc>
-  </url><url>
     <loc>https://maicongouveia.com.br/sobre/</loc>
   </url><url>
     <loc>https://maicongouveia.com.br/tags/</loc>
-  </url><url>
-    <loc>https://maicongouveia.com.br/blog/desenvolvimento/</loc>
-  </url><url>
-    <loc>https://maicongouveia.com.br/blog/vida/</loc>
   </url>
 </urlset>
