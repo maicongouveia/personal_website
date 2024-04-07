@@ -8,9 +8,6 @@ contato@maicongouveia.com.br
 ### Linkedin
 https://www.linkedin.com/in/gouveiamaicon/
 
-### Twitch
-https://www.twitch.tv/maicongouveia
-
 ### Twitter
 https://twitter.com/gouveiaMaicon
 

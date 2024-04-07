@@ -1,4 +1,16 @@
 baseURL = "https://maicongouveia.com.br"
-languageCode = "pt-br"
-title = "Maicon Gouveia"
 theme = "dimension"
+defaultContentLanguage = 'pt-br'
+title = "Maicon Gouveia"
+
+[languages]
+  [languages.pt-br]
+    disabled = false
+    languageCode = 'pt-BR'
+    languageName = 'pt-BR'
+    weight = 1
+  [languages.en]
+    disabled = false
+    languageCode = 'en'
+    languageName = 'en'
+    weight = 2
