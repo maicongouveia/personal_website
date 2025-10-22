@@ -2,8 +2,24 @@
 title: Carreira
 description: Um pouco sobre a minha carreira
 ---
+### Omie
+#### (Junho/2024 - Atualmente)
+#### https://www.omie.com.br/
+***
+Atualmente integro a equipe de Finanças, sendo responsável pelo desenvolvimento, manutenção e suporte das integrações bancárias da empresa. Atuo em todo o ciclo técnico dessas integrações, abrangendo desde o planejamento e implementação de novas funcionalidades até o monitoramento e a resolução de incidentes em produção.
+
+Minhas atividades incluem a integração com múltiplas instituições financeiras, como Itaú, Banco do Brasil, Santander, Sicoob, Banco Inter, entre outras, com foco em garantir alta disponibilidade e confiabilidade nos processos. Entre as principais funcionalidades sob minha responsabilidade estão a geração e liquidação de boletos bancários, consultas e conciliações de extratos, operações de PIX (envio, recebimento e geração de cobranças) e pagamentos eletrônicos.
+
+Além do desenvolvimento e monitoramento contínuo das rotinas financeiras, também realizo atendimento técnico e suporte a clientes internos e externos, assegurando o correto funcionamento das integrações e a conformidade dos processos com os padrões bancários e de segurança da informação.
+#### Tecnologias
+
+ - Xharbour
+ - PHP
+ - Grafana
+ - Intercon
+***
 ### Z1
-#### (Abril/2022 - Atualmente)
+#### (Abril/2022 - Janeiro/2024)
 #### https://www.z1.app/
 ***
 Comecei trabalhando na equipe de onboarding que era responsável pelo fluxo de entrada dos usuários na plataforma, alcançamos a marca 700 mil cadastros, fiz uma automação para agilizar a entrada de novos usuários de forma mais rápida e integrei com alguns serviços externos. Trabalhei também na equipe de **Produtos Premium** que é responsável por desenvolver novas fontes de renda para a empresa, como pagamento de boletos e cofrinho. Por ultimo entrei na equipe de Carteira que é responsável por diversas funcionalidades dentro do app, trabalhei na integração com o **Banco Central** desde tivemos disponibilidade de utilizar o **Pix Direto**.
