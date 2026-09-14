@@ -19,7 +19,7 @@ content/                 # conteúdo-fonte do site (Markdown), fonte da verdade
   sobre/profissional/_index.*.md # seção Carreira (idem)
   sobre/redes_sociais/_index.*.md # seção Contato (idem)
 archetypes/default.md    # template usado por `hugo new`
-themes/dimension/        # tema Hugo — ⚠️ ver "Problema conhecido" abaixo
+themes/dimension/        # tema Hugo — submódulo git, ver "Build" abaixo
 public/                  # OUTPUT gerado pelo Hugo — versionado no git e é o que
                           # é realmente publicado (ver seção Deploy)
 .github/workflows/main.yml  # CI: publica public/ via FTP a cada push
@@ -27,7 +27,9 @@ public/                  # OUTPUT gerado pelo Hugo — versionado no git e é o 
 public/admin/            # Netlify CMS (decap) apontando para o git-gateway
 ```
 
-Não existe `package.json`, `go.mod` nem test suite — não há `npm install`/`npm test` a rodar.
+Não existe `package.json`, nem test suite — não há `npm install`/`npm test` a rodar. Rodar `hugo`
+exige o binário do Hugo instalado (ver "Build"); Go só é necessário se for compilar o próprio Hugo
+a partir do fonte, não é uma dependência direta deste repositório.
 
 ## ⚠️ A página "Sobre" é single-page com modais — não são páginas separadas
 
@@ -64,26 +66,29 @@ regenerar ou patchear manualmente, confirme que essas duas páginas ficaram corr
 ## Build
 
 ```
+git submodule update --init --recursive   # busca themes/dimension (só necessário 1x por clone)
 hugo                 # gera/atualiza public/ a partir de content/ + themes/dimension
 hugo server -D       # servidor local com live reload, incluindo drafts
 ```
 
-⚠️ **Problema conhecido: o tema `themes/dimension` está quebrado neste checkout.**
-`themes/dimension` é referenciado no git como *gitlink* (submodule, modo `160000`,
-commit `2474081b7846ce0e211c57b86ed84989548a777d`), mas **não existe `.gitmodules`** no
-repositório — logo `git submodule update --init` não tem URL para buscar, e a pasta
-`themes/dimension/` fica vazia no working tree. Isso significa:
-- `hugo` / `hugo server` vão falhar (tema ausente) até o tema ser obtido manualmente.
-- Pelo layout do CMS (`public/admin/config.yml`, Netlify CMS/git-gateway) e pela estrutura de
-  `config.toml`, o tema é muito provavelmente um port Hugo do template HTML5 UP "Dimension"
-  "CMS friendly" — candidato mais próximo encontrado:
-  `https://github.com/your-identity/hugo-theme-dimension`. **Confirme o conteúdo antes de usar**
-  (comparar layouts/partials com o HTML já renderizado em `public/`) — não há garantia de que seja
-  exatamente essa fonte.
-- Alternativa sem depender do tema: `public/` já contém o HTML totalmente renderizado da build mais
-  recente, então para alterações pequenas de texto é possível editar `content/` e, na falta de poder
-  rodar `hugo`, editar os arquivos correspondentes em `public/**/index.html` manualmente (menos
-  ideal, mas mantém o site publicável). Prefira sempre corrigir o tema/build antes, se possível.
+Requer o binário do Hugo instalado (testado com `hugo v0.166.0-extended`; no Windows,
+`winget install --id Hugo.Hugo.Extended -e`).
+
+`themes/dimension` é um **submódulo git de verdade** apontando para
+`https://github.com/your-identity/hugo-theme-dimension.git`, registrado em `.gitmodules`. **Isso foi
+corrigido recentemente** — até pouco tempo atrás, o gitlink existia no índice do git (modo `160000`,
+commit `2474081b7846ce0e211c57b86ed84989548a777d`) mas sem `.gitmodules`, então
+`git submodule update --init` não tinha URL para buscar e a pasta ficava vazia (build silenciosamente
+não gerava nenhum HTML de página — `hugo` rodava sem erro fatal, só com avisos "no layout file for
+kind home/section/taxonomy"). Se um checkout antigo/cache ainda tiver esse sintoma, rode
+`git submodule update --init --recursive` (ou, se `themes/dimension` já existir vazio no working
+tree e o comando reclamar, apague a pasta vazia antes e rode de novo).
+
+Se por algum motivo o submódulo não puder ser buscado (offline, proxy, etc.): `public/` já contém o
+HTML totalmente renderizado da build mais recente, então para alterações pequenas de texto é possível
+editar `content/` e replicar a mudança manualmente em `public/**/index.html` (menos ideal, mas mantém
+o site publicável). Prefira sempre rodar `hugo` de verdade quando possível — patch manual tem alto
+risco de divergir do conteúdo-fonte (já aconteceu: ver commit que corrigiu a data de saída da Z1).
 
 ## Deploy
 
@@ -126,6 +131,11 @@ CI**. Consequências:
   (`https://maicongouveia.com.br/pt-br/sitemap.xml`) e é servida publicamente. Isso é um problema
   pré-existente separado de qualquer edição de conteúdo — não tente corrigi-lo como patch pontual;
   ele exige rodar `hugo` de verdade (com `baseURL` de produção) e recommitar toda a árvore `public/`.
+- O rodapé de todas as páginas atualmente publicadas está **sem a linha de atribuição do tema**
+  (`© Design: d-asnaghi and HTML5 UP.`), que o layout do tema gera por padrão — um build limpo a
+  traz de volta em todas as páginas. Não se sabe se isso foi removido de propósito (ex.: preferência
+  de não exibir atribuição) ou é só resquício de builds antigas; **pergunte ao usuário antes de
+  decidir** se ela deve voltar.
 
 ## Convenções de commit
 
@@ -137,5 +147,10 @@ profissional`, `fix: ci`.
 
 - Não fazer push/deploy (todo push publica em produção via FTP, sem staging).
 - Não migrar/mesclar a branch `rebrading-2025-10` para `master`.
-- Não apagar `themes/dimension` nem tentar "consertar" o gitlink adicionando um `.gitmodules` com uma
-  URL adivinhada sem antes confirmar qual é o tema correto com o usuário.
+- Não clonar/instalar dependências de repositórios de terceiros só com base em um palpite — o
+  classificador de segurança do Claude Code bloqueia isso por padrão, e com razão. A URL do tema em
+  `.gitmodules` foi confirmada pelo próprio usuário antes de ser usada.
+- Não fazer um rebuild completo (`hugo` sobrescrevendo todo `public/`) sem avisar antes: o `public/`
+  atual acumulou anos de artefatos legados (pasta `blog/`, `en/about/`, `pt-br/**` duplicado,
+  diretórios `_index.*-copy` do CMS, `images/perfil.jpg`) que um build limpo remove — pode haver
+  URLs indexadas/com backlink que dependam deles. Confirme com o usuário antes de fazer essa limpeza.

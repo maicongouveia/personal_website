@@ -19,7 +19,7 @@ In addition to ongoing development and monitoring of these financial routines, I
  - Intercon
 ***
 ### Z1
-#### (Abril/2022 - Atualmente)
+#### (Abril/2022 - Janeiro/2024)
 #### https://www.z1.app/
 ***
 Comecei trabalhando na equipe de onboarding que era responsável pelo fluxo de entrada dos usuários na plataforma, alcançamos a marca 700 mil cadastros, fiz uma automação para agilizar a entrada de novos usuários de forma mais rápida e integrei com alguns serviços externos. Trabalhei também na equipe de **Produtos Premium** que é responsável por desenvolver novas fontes de renda para a empresa, como pagamento de boletos e cofrinho. Por ultimo entrei na equipe de Carteira que é responsável por diversas funcionalidades dentro do app, trabalhei na integração com o **Banco Central** desde tivemos disponibilidade de utilizar o **Pix Direto**.
