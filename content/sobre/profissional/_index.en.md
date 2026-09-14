@@ -2,6 +2,22 @@
 title: Experience
 description: My career as a developer
 ---
+### Omie
+#### (Junho/2024 - Atualmente)
+#### https://www.omie.com.br/
+***
+I'm currently part of the Finance team, responsible for the development, maintenance and support of the company's banking integrations. I work across the full technical lifecycle of these integrations, from planning and implementing new features to monitoring and resolving production incidents.
+
+My work includes integrating with multiple financial institutions, such as Itaú, Banco do Brasil, Santander, Sicoob and Banco Inter, among others, with a focus on ensuring high availability and reliability. Key responsibilities include generating and settling bank slips (boletos), querying and reconciling bank statements, PIX operations (sending, receiving and generating charges), and electronic payments.
+
+In addition to ongoing development and monitoring of these financial routines, I also provide technical support to internal and external clients, ensuring the integrations work correctly and comply with banking and information security standards.
+#### Tecnologias
+
+ - Xharbour
+ - PHP
+ - Grafana
+ - Intercon
+***
 ### Z1
 #### (Abril/2022 - Atualmente)
 #### https://www.z1.app/
