@@ -74,6 +74,18 @@
                 href="https://maicongouveia.com.br/en/"
                 />
   </url><url>
+    <loc>https://maicongouveia.com.br/en/sobre/projetos/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="https://maicongouveia.com.br/sobre/projetos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maicongouveia.com.br/en/sobre/projetos/"
+                />
+  </url><url>
     <loc>https://maicongouveia.com.br/en/tags/</loc>
     <xhtml:link
                 rel="alternate"

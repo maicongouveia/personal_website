@@ -1,5 +1,5 @@
 ---
 title: Maicon Gouveia
-description: Software Developer
+description: Backend Developer — Banking Integrations and Pix
 background: "images/bg.jpg"
 ---
