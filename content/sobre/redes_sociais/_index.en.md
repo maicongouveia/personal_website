@@ -1,5 +1,5 @@
 ---
-title: Contatc me
+title: Contact me
 description: Where you can find me
 ---
 ### Email
