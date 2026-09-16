@@ -27,7 +27,9 @@ Na equipe de Carteira da Z1 — plataforma que alcançou a marca de 700 mil cada
 ### WatchMyCar
 #### TCC — Sistema de monitoramento veicular
 ***
-Sistema de monitoramento veicular com integração a hardware instalado no veículo, notificação de movimento e localização em tempo real. Repercutiu em matérias da Globo (Auto Esporte) e da Exame (Arena Tech).
+Sistema de monitoramento veicular com integração a hardware instalado no veículo, notificação de movimento e localização em tempo real. Repercutiu em matérias da Globo (Auto Esporte) e da Exame (Arena Tech). Projeto descontinuado — o site abaixo é uma versão arquivada, mantida como portfólio.
+
+**[Ver o site do projeto (arquivado)](/watchmycar/)**
 
 **[Matéria Globo — Auto Esporte](https://globoplay.globo.com/v/4776724/)**
 

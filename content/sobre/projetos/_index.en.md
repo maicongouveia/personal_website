@@ -27,7 +27,9 @@ On Z1's Wallet team — a platform that reached 700 thousand registered users �
 ### WatchMyCar
 #### Final Paper — Vehicle monitoring system
 ***
-Vehicle monitoring system integrated with hardware installed in the car, with movement notifications and real-time location. It was featured in stories by Globo (Auto Esporte) and Exame (Arena Tech).
+Vehicle monitoring system integrated with hardware installed in the car, with movement notifications and real-time location. It was featured in stories by Globo (Auto Esporte) and Exame (Arena Tech). Discontinued project — the site below is an archived version, kept as a portfolio piece.
+
+**[View the project site (archived)](/watchmycar/)**
 
 **[Globo story — Auto Esporte](https://globoplay.globo.com/v/4776724/)**
 

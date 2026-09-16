@@ -10,8 +10,7 @@ title: Graduation
 ***
 ### Final Paper - WatchMyCar
 ***
-Vehicle monitoring system.
-https://www.watchmycar.com.br
+Vehicle monitoring system. Discontinued project — [see the archived version of the site](/watchmycar/).
 
 #### Features
 - Integration with hardware installed in the vehicle

@@ -1,0 +1,18 @@
+.img-desabilitada{
+	filter: gray; /* IE6-9 */
+	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+.img-desabilitada:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.icone-contato{
+	color: #fff;
+}
+.icone-contato:hover{
+	filter: gray; /* IE6-9 */
+	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}

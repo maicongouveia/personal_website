@@ -10,8 +10,7 @@ title: Formação
 ***
 ### TCC - WatchMyCar
 ***
-Sistema de monitoramento veicular
-https://www.watchmycar.com.br
+Sistema de monitoramento veicular. Projeto descontinuado — [veja a versão arquivada do site](/watchmycar/).
 
 #### Características
 - Integração com hardware instalado no veiculo
