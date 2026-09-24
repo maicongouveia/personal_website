@@ -1,0 +1,130 @@
+{
+  "title": "Escolha o mundo visual do site",
+  "question": "O sorteio escolheu a Etiqueta de Rastreamento. Fique com ela, escolha uma alternativa ou sorteie de novo.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Etiqueta de Rastreamento",
+      "kicker": "O SORTEIO",
+      "lineage": "etiquetas térmicas de transportadora e o histórico de rastreamento de encomendas",
+      "thesis": "A carreira como uma remessa rastreada: cada empresa é um evento datado, do postado à entrega em produção.",
+      "palette": ["#F4F1EA", "#141414", "#B01E28", "#8A8578"],
+      "materials": ["papel térmico", "código de barras", "carimbo carmesim", "campos com filete preto"],
+      "viewport": "Uma etiqueta enorme ocupa a primeira tela: DESTINATÁRIO Maicon Gouveia em grotesca condensada preta, campos com filete (função, anos, base, idiomas), código de barras que é o link de e-mail, faixa carmesim com o monograma MG. À direita, o topo do histórico de rastreamento: Omie, 2024, EM ROTA.",
+      "risk": "A metáfora vira piada se o texto brincar; o conteúdo continua factual e a etiqueta serve só de gramática.",
+      "raised": [
+        {"from": "challenger-sixpack", "raise": "Cada campo da etiqueta guarda um único fato e o olhar varre os campos numa ordem fixa, como a checagem cruzada de um piloto."},
+        {"from": "challenger-combo", "raise": "Toda a stack aparece num bloco denso de letras miúdas no rodapé da etiqueta, como os créditos de um cartaz."},
+        {"from": "challenger-nixie", "raise": "Estados mudam em corte seco, como impressão térmica: nada desliza, só aparece."},
+        {"from": "challenger-orizuru", "raise": "Uma coluna de margem rígida numera cada etapa da carreira de 01 a 06 numa única folha contínua."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Mapa do Metrô",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "diagrama das linhas do Metrô de São Paulo",
+      "thesis": "Uma carreira generalista como mapa de linhas: cada empresa é uma estação, e as integrações são as baldeações.",
+      "palette": ["#FFFFFF", "#1A1A1A", "#B01E28", "#0455A1", "#00A06B"],
+      "materials": ["linhas de 45°", "estações circulares", "placas de sinalização"],
+      "viewport": "A Linha Vermelha atravessa a tela inteira com seis estações datadas; o nome fica na placa da estação atual.",
+      "risk": "O currículo em forma de mapa de metrô já é um formato conhecido; pode parecer referência reciclada."
+    },
+    {
+      "id": "challenger-orizuru",
+      "label": "Tsuru em 32 dobras",
+      "verdict": "declined",
+      "lineage": "diagramas de origami em washi vermelho",
+      "thesis": "Uma folha carmesim que se dobra passo a passo até a forma final.",
+      "palette": ["#C8322A", "#F3E9DC", "#1A1A1A", "#C9A227"],
+      "materials": ["fibra de washi", "vincos"],
+      "viewport": "Folha carmesim sangrando a tela com as etapas numeradas na margem.",
+      "case": "O carmesim encaixa, mas recrutadores não se reconhecem num origami e a clareza cai.",
+      "risk": "Fica poético demais para quem só quer escanear.",
+      "kept": "Coluna rígida de etapas numeradas numa folha contínua.",
+      "hero": "https://impeccable.style/worlds/cards/paper-folds-pleats-deployable-orizuru-crane-sequence-hero.webp"
+    },
+    {
+      "id": "challenger-sixpack",
+      "label": "Painel de voo noturno",
+      "verdict": "declined",
+      "lineage": "os seis instrumentos de um avião pequeno",
+      "thesis": "Seis mostradores, cada um com uma verdade.",
+      "palette": ["#0B0B0B", "#F2F2F2", "#5CFF8A", "#FFB000"],
+      "materials": ["mostradores", "ponteiros luminosos"],
+      "viewport": "Seis mostradores: anos, empresas, stack, formação, projetos, contato.",
+      "case": "Transforma carreira em indicador, o que ninguém do público lê como currículo.",
+      "risk": "Fica parecendo dashboard.",
+      "kept": "Cada campo tem um fato e existe uma ordem fixa de leitura.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack-hero.webp"
+    },
+    {
+      "id": "challenger-combo",
+      "label": "Cartaz de sessão dupla",
+      "verdict": "declined",
+      "lineage": "cartazes de cinema B com dois títulos",
+      "thesis": "Dois títulos gritando e os créditos densos no rodapé.",
+      "palette": ["#FFD400", "#C8102E", "#111111"],
+      "materials": ["offset desalinhado", "retícula"],
+      "viewport": "Título gigante e bloco de créditos no pé.",
+      "case": "Tem personalidade, mas grita onde um perfil sênior precisa inspirar confiança.",
+      "risk": "Fica chamativo demais.",
+      "kept": "O bloco de créditos denso e escaneável.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-exploitation-combo-sheet-hero.webp"
+    },
+    {
+      "id": "challenger-nixie",
+      "label": "Válvulas nixie",
+      "verdict": "declined",
+      "lineage": "contadores de válvula com numerais incandescentes",
+      "thesis": "Todos os valores presentes, só um aceso.",
+      "palette": ["#0A0F1C", "#FF7A1A", "#8C6B3F"],
+      "materials": ["malha de bronze", "brilho catódico"],
+      "viewport": "Os anos de carreira acesos sobre os dígitos apagados.",
+      "case": "É nostalgia de gadget, sem ligação com a trajetória.",
+      "risk": "Fica parecendo tema de dev.",
+      "kept": "Mudança de estado em corte seco, sem transição.",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-struck-cathode-gauze-hero.webp"
+    },
+    {
+      "id": "challenger-mezzotint",
+      "label": "Mezzotinta",
+      "verdict": "declined",
+      "lineage": "gravura em chapa escurecida e polida",
+      "thesis": "A imagem surge ao remover o escuro.",
+      "palette": ["#0A0A0A", "#D9D6CF", "#6B4E3A"],
+      "materials": ["veludo negro", "prata polida"],
+      "viewport": "Chapa preta com o nome surgindo em prata.",
+      "case": "Sombrio e lento, o contrário de escanear rápido.",
+      "risk": "Fica ilegível e moody.",
+      "kept": "Compromisso total com um único fundo.",
+      "hero": "https://impeccable.style/worlds/cards/ink-pigment-printmaking-mezzotint-velvet-night-hero.webp"
+    },
+    {
+      "id": "challenger-chromatophore",
+      "label": "Pele de cefalópode",
+      "verdict": "declined",
+      "lineage": "cromatóforos de polvo",
+      "thesis": "Uma superfície viva que muda de padrão.",
+      "palette": ["#EDE3D1", "#7A2E1F", "#1FA39A"],
+      "materials": ["shader celular"],
+      "viewport": "Pele animada com o nome desenhado na superfície.",
+      "case": "Distrai do conteúdo e pesa sem ganho de clareza.",
+      "risk": "Fica pesado e sem relação com o conteúdo.",
+      "kept": "Nada além de movimento com propósito.",
+      "hero": "https://impeccable.style/worlds/cards/reefs-bioluminescent-nocturnal-chromatophore-skin-language-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "O padrão da categoria",
+    "thesis": "Um portfólio de dev limpo em coluna única, executado com rigor.",
+    "palette": ["#FFFFFF", "#111111", "#B01E28"],
+    "materials": ["grid limpo", "tipografia sans"],
+    "viewport": "Nome, uma frase, links e depois a lista de experiências.",
+    "risk": "Fica igual aos outros portfólios de dev, que é justamente o que você quer evitar."
+  },
+  "steer": true
+}

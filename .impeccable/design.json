@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-24T12:00:00-03:00",
+  "title": "Design System: Maicon Gouveia",
+  "extensions": {
+    "colorMeta": {
+      "mailer-crimson": {"role": "primary", "displayName": "Carmesim de Envelope", "canonical": "#B01E28", "tonalRamp": ["#3A0A0D", "#5E1016", "#8C1720", "#B01E28", "#CF4A52", "#E3868B", "#F2BFC2", "#FBEAEB"]},
+      "mailer-deep": {"role": "primary", "displayName": "Carmesim Profundo", "canonical": "#8C1720"},
+      "on-mailer": {"role": "neutral", "displayName": "Branco de Envelope", "canonical": "#FFF7F6"},
+      "on-mailer-soft": {"role": "neutral", "displayName": "Rosa de Envelope", "canonical": "#F6CFD1"},
+      "thermal-paper": {"role": "neutral", "displayName": "Papel Térmico", "canonical": "#F7F6F2", "tonalRamp": ["#2A2926", "#4A4743", "#77746D", "#A3A098", "#C9C6BE", "#E1DFD8", "#ECEAE3", "#F7F6F2"]},
+      "thermal-ink": {"role": "neutral", "displayName": "Tinta Térmica", "canonical": "#141414"},
+      "thermal-ink-soft": {"role": "neutral", "displayName": "Tinta Desbotada", "canonical": "#4A4743"}
+    },
+    "typographyMeta": {
+      "display": {"displayName": "Display", "purpose": "Nome na etiqueta e fechamento."},
+      "headline": {"displayName": "Headline", "purpose": "Títulos de seção em caixa-alta."},
+      "title": {"displayName": "Title", "purpose": "Empresa no histórico e nome de volume."},
+      "body": {"displayName": "Body", "purpose": "Descrições, até 68ch."},
+      "label": {"displayName": "Label", "purpose": "Rótulos de campo, datas, códigos e carimbos."}
+    },
+    "shadows": [
+      {"name": "contact", "value": "0 1px 0 rgba(60,0,8,.28), 0 3px 4px -2px rgba(40,0,6,.35)", "purpose": "Papel colado no envelope; única sombra do sistema."}
+    ],
+    "motion": [
+      {"name": "print", "value": "clip-path inset 100% -> 0, .36s steps(6, end)", "purpose": "Faixas da etiqueta impressas em sequência no carregamento."},
+      {"name": "stamp", "value": "opacity, .2s steps(2, end)", "purpose": "Eventos e pontos do rastreio aparecendo em corte seco."}
+    ],
+    "breakpoints": [
+      {"name": "stack", "value": "960px"},
+      {"name": "compact", "value": "720px"}
+    ]
+  },
+  "components": [
+    {"name": "Solid Button", "kind": "button", "refersTo": "button-solid", "description": "Ação principal dentro de uma etiqueta.",
+     "html": "<a class=\"ds-btn-solid\" href=\"#\">Entrar em contato</a>",
+     "css": ".ds-btn-solid{display:inline-flex;align-items:center;min-height:48px;padding:10px 18px;border-radius:4px;background:#141414;color:#F7F6F2;border:2px solid #141414;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none}.ds-btn-solid:hover{background:#B01E28;border-color:#B01E28}.ds-btn-solid:focus-visible{outline:3px solid #141414;outline-offset:3px}"},
+    {"name": "Line Button", "kind": "button", "refersTo": "button-line", "description": "Ação secundária dentro de uma etiqueta.",
+     "html": "<a class=\"ds-btn-line\" href=\"#\">Ver histórico</a>",
+     "css": ".ds-btn-line{display:inline-flex;align-items:center;min-height:48px;padding:10px 18px;border-radius:4px;border:2px solid #141414;color:#141414;background:#F7F6F2;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none}.ds-btn-line:hover{background:#141414;color:#F7F6F2}.ds-btn-line:focus-visible{outline:3px solid #141414;outline-offset:3px}"},
+    {"name": "Status Chip", "kind": "chip", "refersTo": "status-chip", "description": "Marca o evento atual do rastreio.",
+     "html": "<span class=\"ds-status\">Em rota</span>",
+     "css": ".ds-status{display:inline-block;padding:3px 7px 2px;background:#B01E28;color:#F7F6F2;font-family:'Azeret Mono',monospace;font-size:.6875rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}"},
+    {"name": "Label Field Grid", "kind": "card", "refersTo": "label", "description": "Campos da etiqueta: um fato por campo, separados por filete.",
+     "html": "<dl class=\"ds-fields\"><div><dt>Desde</dt><dd>2017</dd></div><div><dt>Status</dt><dd class=\"live\">Em rota</dd></div></dl>",
+     "css": ".ds-fields{display:grid;grid-template-columns:1fr 1fr;margin:0;background:#F7F6F2;color:#141414;border:2px solid #141414}.ds-fields div{padding:14px 18px}.ds-fields div+div{border-left:2px solid #141414}.ds-fields dt{font-family:'Azeret Mono',monospace;font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase;color:#4A4743}.ds-fields dd{margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.55rem;text-transform:uppercase}.ds-fields .live{color:#B01E28}"},
+    {"name": "Navigation", "kind": "nav", "description": "Barra fixa em carmesim profundo.",
+     "html": "<nav class=\"ds-nav\"><a class=\"mark\" href=\"#\">MG</a><a href=\"#\">Rastreio</a><a href=\"#\">Projetos</a></nav>",
+     "css": ".ds-nav{display:flex;align-items:center;gap:26px;min-height:60px;padding:0 24px;background:#8C1720}.ds-nav a{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#F6CFD1;text-decoration:none}.ds-nav a:hover{color:#FFF7F6;text-decoration:underline}.ds-nav .mark{font-weight:800;font-size:1.25rem;color:#FFF7F6;border:2px solid #FFF7F6;padding:5px 8px 4px;margin-right:auto}.ds-nav .mark:hover{background:#FFF7F6;color:#8C1720;text-decoration:none}"}
+  ],
+  "narrative": {
+    "northStar": "A Remessa Rastreada",
+    "overview": "O site é uma encomenda em trânsito: fundo de envelope plástico carmesim e todo conteúdo em etiquetas de papel térmico coladas sobre ele. A metáfora é só gramática visual; o texto continua factual.",
+    "keyCharacteristics": ["Envelope carmesim cobre toda a página (estratégia Committed); o conteúdo longo mora no papel.", "Etiquetas com moldura impressa interna de 2px e cantos de corte de faca (4px).", "Grotesca condensada em caixa-alta para nomes; mono para dados; Barlow para leitura.", "Código de barras Code 128 real como link de e-mail.", "Movimento em steps(), sem easing."],
+    "rules": [
+      {"name": "The Two Surfaces Rule", "body": "Só existem o envelope e o papel. Nenhum terceiro fundo, nenhum cinza de cartão, nenhum gradiente.", "section": "colors"},
+      {"name": "The Live Ink Rule", "body": "Sobre o papel, o carmesim marca apenas o que é atual ou acionável. Texto secundário nunca é carmesim.", "section": "colors"},
+      {"name": "The Field Label Rule", "body": "Rótulo mono fica ao lado ou dentro do campo que descreve, nunca como kicker acima de um título de seção.", "section": "typography"},
+      {"name": "The Mono Is Data Rule", "body": "Mono só para datas, códigos, stack e rótulos de campo; nunca para prosa.", "section": "typography"},
+      {"name": "The Glued Paper Rule", "body": "Nada flutua. Sombra difusa grande, glow ou sombra dura deslocada estão fora do mundo.", "section": "elevation"}
+    ],
+    "dos": ["Do colocar todo conteúdo novo numa etiqueta de papel sobre o envelope, com a moldura impressa de 2px.", "Do dar um único fato a cada campo e uma ordem fixa de leitura.", "Do animar só em steps() (impressão por faixa, carimbo), sempre dentro de prefers-reduced-motion: no-preference.", "Do manter pt-br e en idênticos em estrutura."],
+    "donts": ["Don't usar sombra difusa grande, cantos acima de 4px, gradientes ou glass.", "Don't colocar kicker/eyebrow acima de títulos de seção; rótulos mono pertencem a campos.", "Don't usar mono em prosa, nem carmesim em texto secundário sobre o papel.", "Don't transformar a metáfora em piada no texto: a copy continua factual."]
+  }
+}

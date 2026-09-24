@@ -31,6 +31,10 @@ docs/                        # documentação de referência (não lida por nenh
                               # public/.htaccess, que o deploy sobe)
 .github/workflows/main.yml   # CI: publica public/ via FTP a cada push
 AGENTS.md / CLAUDE.md        # este guia
+PRODUCT.md                   # verdade de produto (público, posicionamento, compromissos de marca)
+DESIGN.md                    # sistema visual atual (tokens, tipografia, componentes)
+.impeccable/                 # contexto da skill de design Impeccable (contrato de direção em
+                              # surfaces/; review/ é gitignored)
 ```
 
 Não existe `package.json` nem test suite — não há `npm install`/`npm test`/build algum a rodar.
@@ -52,6 +56,17 @@ páginas (histórico profissional completo, formação, projetos, contato) — �
 rápida sem precisar reler o HTML inteiro, mas **não é a fonte de verdade e nenhum processo os lê**;
 se o conteúdo do site mudar, edite o HTML e, se ainda fizer sentido, atualize esses arquivos também
 (eles podem ficar defasados sem que isso quebre nada).
+
+O visual atual (set/2026) é o mundo "etiqueta de transportadora + histórico de rastreamento":
+fundo carmesim de envelope, etiquetas em papel térmico, Barlow Condensed / Barlow / Azeret Mono.
+Antes de mexer no visual, leia `DESIGN.md`. As experiências ficam em `<ol class="track">`, com um
+`<li class="ev">` por empresa (a numeração `seq` é decrescente, 06 → 01), e o bloco "Conteúdo
+declarado" da etiqueta lista a stack deduplicada. Ao adicionar uma empresa, atualize os dois, os
+campos "Paradas"/"Stops" e o aside "Últimos eventos", nas duas línguas.
+
+**Analytics:** as duas páginas carregam o GoatCounter (`maicongouveia.goatcounter.com`, sem
+cookies) e marcam cliques de contato, perfis e projetos com `data-goatcounter-click="<nome>"`.
+Mantenha esses atributos ao editar links.
 
 `public/watchmycar/` é o site arquivado de um projeto antigo (TCC), publicado como está, sem
 edição — não faz parte do conteúdo "vivo" do portfólio.
