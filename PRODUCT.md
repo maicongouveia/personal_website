@@ -53,7 +53,7 @@ posicionamento escolhido é a amplitude, não um nicho.
 - Número concreto: 700 mil cadastros no onboarding da Z1.
 - Imprensa do TCC WatchMyCar: Globo Auto Esporte (31/01/2016), Exame Arena Tech (11/03/2016).
 - Projeto pessoal "Odisseia dos Lordes Dragões": pipeline em Python com LLM e geração de imagem,
-  26 sessões catalogadas, em rpg.maicongouveia.com.br.
+  publicado em rpg.maicongouveia.com.br.
 - Não existem foto profissional, depoimentos, métricas de tráfego nem estudos de caso. Não
   inventar nada disso.
 

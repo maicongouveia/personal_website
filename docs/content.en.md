@@ -95,7 +95,7 @@ Technologies: PHP, JavaScript, HTML, CSS.
 ### Odisseia dos Lordes Dragões (RPG)
 Personal project — a custom Python pipeline that turns the audio of each tabletop RPG session into
 an illustrated chronicle: transcription, summarization and scene detection via LLM, AI image
-generation and automatic site publishing. 26 sessions catalogued so far.
+generation and automatic site publishing.
 <https://rpg.maicongouveia.com.br>
 
 ### WatchMyCar

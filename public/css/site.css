@@ -292,8 +292,6 @@ time, .code, .seq{font-variant-numeric:tabular-nums;}
 .slip .more:hover{color:var(--accent);}
 .pair section:first-child .slip{transform:rotate(.6deg);}
 .vol:nth-child(1){transform:rotate(-.4deg);}
-.stat{margin-top:14px; font-weight:600;}
-.stat b{font-family:var(--display); font-weight:800; font-size:2.4rem; line-height:1; color:var(--accent); margin-right:4px;}
 .links{display:flex; flex-wrap:wrap; gap:10px 22px; margin-top:18px;}
 .lnk{display:inline-flex; align-items:center; gap:6px; font-weight:600;}
 .lnk .ico{width:.8em; height:.8em;}
